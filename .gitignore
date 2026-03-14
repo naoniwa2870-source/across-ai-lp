@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+*.local
+
+# IDE / Editor
+.vscode/
+.idea/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Skill / metadata (optional)
+*.skill
+metadata.json

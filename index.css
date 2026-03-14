@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Playfair Display', 'Noto Serif JP', serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ─── Carousel auto-scroll ─── */
+@keyframes carouselScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: carouselScroll 28s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+/* アンカーリンク時、固定ヘッダーで隠れないよう余白を取る（Web Interface Guidelines） */
+#main-content,
+#top,
+#contact,
+#services,
+#cta,
+#problems,
+#about,
+#case-studies,
+#testimonials,
+#initiatives,
+#reasons,
+#flow {
+  scroll-margin-top: 6rem;
+}
