@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Send, CheckCircle2 } from 'lucide-react';
 
@@ -161,7 +162,7 @@ const Contact: React.FC = () => {
 
                 <div className="pt-6 text-center">
                   <p className="text-xs text-slate-500 mb-6">
-                    <a href="#" className="underline hover:text-slate-900">プライバシーポリシー</a>に同意の上、送信してください。
+                    <Link to="/privacy" className="underline hover:text-slate-900">プライバシーポリシー</Link>に同意の上、送信してください。
                   </p>
                   <motion.button
                     whileHover={{ scale: 1.05 }}

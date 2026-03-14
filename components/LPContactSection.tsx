@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Send, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -130,7 +131,7 @@ const LPContactSection: React.FC = () => {
 
               <div className="pt-4 text-center">
                 <p className="text-xs text-slate-500 mb-4">
-                  <a href="/privacy" className="underline hover:text-slate-900">プライバシーポリシー</a>
+                  <Link to="/privacy" className="underline hover:text-slate-900">プライバシーポリシー</Link>
                   に同意のうえ、送信してください。
                 </p>
                 <motion.button
