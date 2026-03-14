@@ -7,7 +7,6 @@ import {
   Users,
   AlertTriangle,
   UserSearch,
-  Network,
   Wand2,
   Eye,
   Cpu,

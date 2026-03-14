@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle2, Clock, Users, Zap } from 'lucide-react';
+import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
 const serviceData: Record<string, {
   title: string;
